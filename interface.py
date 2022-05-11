@@ -2,6 +2,7 @@ import pygame
 import botoes
 import imagens
 import mecanica
+from pygame import mixer
 
 pygame.init()
 janela = pygame.display.set_mode((800,650))
@@ -38,7 +39,7 @@ while run:
         janela.blit(imagens.imagem_pista, (0,0))
         janela.blit(imagens.imagem_veu, (0,0))
 
-        janela.blit(textoinicio,(175,70))
+        janela.blit(textoinicio,(125,70))
         if botao_start.botao():
             telainicial = False
             telaloading = True
