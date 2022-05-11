@@ -12,7 +12,6 @@ def redimensionamento_Imagens(imagem, escala):
     imagem = pygame.transform.scale(imagem, (int(largura * escala), int(altura * escala)))
     return imagem
 
-
 imagem_pista = carregamento_Imagens("images/pista.png")
 imagem_veu = carregamento_Imagens("images/veu.png")
 imagem_start = carregamento_Imagens("images/start.png")

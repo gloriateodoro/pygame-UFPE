@@ -1,7 +1,7 @@
 import pygame
 import botoes
 import imagens
-import mecanica 
+import mecanica
 
 pygame.init()
 janela = pygame.display.set_mode((800,650))
@@ -34,10 +34,10 @@ while run:
         fonte = pygame.font.SysFont("calibri",80,True,True)
         texto = 'TRIVIAL RACE'
         textoinicio = fonte.render(texto,False,(255,0,0))
-        
+
         janela.blit(imagens.imagem_pista, (0,0))
         janela.blit(imagens.imagem_veu, (0,0))
-        
+
         janela.blit(textoinicio,(175,70))
         if botao_start.botao():
             telainicial = False
@@ -65,14 +65,14 @@ while run:
                 if count_timer - last_count > 1000:
                     countdown -=1
                     last_count = count_timer
-            else: 
+            else:
                 if countdown > 1:
                     janela.blit(imagens.imagem_set, ((400 - imagens.imagem_set.get_width()/2), 200))
                     count_timer = pygame.time.get_ticks()
                     if count_timer - last_count > 1000:
                         countdown -=1
                         last_count = count_timer
-                else: 
+                else:
                     if countdown > 0:
                         janela.blit(imagens.imagem_go, ((400 - imagens.imagem_go.get_width()/2), 200))
                         count_timer = pygame.time.get_ticks()
@@ -82,7 +82,6 @@ while run:
                     else:
                         telaloading = False
                         mecanica.game()
-            
 
     #FUNCIONAMENTO DA TELA DE RECORDES
     '''if telatrofeu:
@@ -115,7 +114,7 @@ while run:
             telaesc = False
             anterior = 'esc'
             telatrofeu = True
-        
+
     #Controlador da janela do jogo
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
