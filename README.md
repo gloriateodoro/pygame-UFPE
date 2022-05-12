@@ -39,15 +39,16 @@ Execute o arquivo interface.py
 
 - **main.py**: Se encontra o código da interface do jogo. O código é iniciado com *pygame.init()*, para abrir a interface do jogo. É chamada a *set_caption*, função do *pygame* que serve para intitular o ‘nome do jogo’ (nome que fica em cima do *display*).  A variável ‘Janela’ é definida como o *display* do jogo, com a tela do jogo sendo aberta nas dimensões 800X650.  É importada a classe botões*.py*, que possibilita a criação dos vários objetos de botão que existem na tela inicial.
     
-       As imagens são buscadas da pasta de imagens e são renderizadas em cima dos blocos. Todas as telas iniciais adquirem valores booleanos para controlar o momento em que elas aparecem. 
+       As imagens são buscadas da pasta de imagens e são renderizadas em cima dos blocos. Todas as telas iniciais adquirem valores booleanos para controlar 
+       o momento em que elas aparecem. 
     
        O loop principal do jogo é declarado.  
     
-    Para o funcionamento das telas uma série de *if statement* são declaradas.  Também é importado a [mecanica.py](http://mecanica.py) , o que possibilita a “junção” da lógica de funcionamento com o menu inicial do jogo.
+    Para o funcionamento das telas uma série de *if statement* são declaradas.  Também é importado a mecanica.py , o que possibilita a “junção” da lógica de funcionamento com o menu inicial do jogo.
     
-    - **botoes*.py***: Classe importada na [main*.py](http://main.py)* com os atributos das características do objeto e método que retorna o clique do botão.  No botoes.*py* também é importado a biblioteca *pygame* para que seja possível a criação do método.
-    - **imagens.*py*:** Módulo que redimensiona as imagens utilizadas no jogo.
-    - **mecanica*.py*:** Código contendo as mensagens, tempo, e imprime as imagens do jogo. Na mecanica.py são importadas as bibliotecas: *pygame* e todos os seus *LOCALS*, o *EXIT* de SYS - utilizado para fechar o jogo, o *datetime* - utilizado no contador.
+    - **botoes*.py***: Classe importada na main.py com os atributos das características do objeto e método que retorna o clique do botão.  No botoes.*py* também é importado a biblioteca *pygame* para que seja possível a criação do método.
+    - **imagens*.py***: Módulo que redimensiona as imagens utilizadas no jogo.
+    - **mecanica*.py***: Código contendo as mensagens, tempo, e imprime as imagens do jogo. Na mecanica.py são importadas as bibliotecas: *pygame* e todos os seus *LOCALS*, o *EXIT* de SYS - utilizado para fechar o jogo, o *datetime* - utilizado no contador.
         
         São importadas as classes: MovimentacaoJogador, Nivel, Randomizacao. 
         
